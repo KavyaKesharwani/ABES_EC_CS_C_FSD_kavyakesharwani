@@ -1,0 +1,61 @@
+#container-box{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 0px;
+}
+.box{
+    border: 2px solid rgb(147, 144, 144);
+    height: 400px;
+    width: 220px;
+    background-color: #f4f1f1;
+}
+.box:nth-child(1){
+    background-color: rgb(43, 225, 249);
+    display: flex;
+    flex-direction: column;
+}
+.box:nth-child(2){
+    background-color: rgb(240, 66, 110);
+    display: flex;
+    flex-direction: row;
+}
+.box:nth-child(3){
+    background-color: rgb(227, 31, 208);
+    display: flex;
+    flex-direction: column;
+}
+.box:nth-child(4){
+    background-color: rgb(195, 240, 88);
+    display: flex;
+    flex-direction: row;
+}
+.box:nth-child(1)>div,
+.box:nth-child(3)>div{
+    width:auto;
+    height:50%;
+}
+.box:hover{
+    cursor: pointer;
+}
+.box:nth-child(2)>div,
+.box:nth-child(4)>div{
+    width:50%;
+    height:50%;
+}
+.box:nth-child(1)>div>img,
+.box:nth-child(3)>div>img{
+    width:90;
+    height:80%;
+}
+.box:nth-child(2)>div>img,
+.box:nth-child(4)>div>img{
+    width:200%;
+    height:70%;
+}
+
+ /* .class-part{
+    width: 50%;    this will do the same as above section do.
+    height: 50%;
+ } */
